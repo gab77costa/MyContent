@@ -24,5 +24,5 @@ Rule {
 	Matches {
 		Url("kukuruku.co/hubs/*")
 	},
-	Action(Boost(9))
+	Action(Boost(200))
 };
