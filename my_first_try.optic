@@ -14,3 +14,9 @@ Rule {
 	},
 	Action(Boost(3))
 };
+Rule {
+	Matches {
+		Url("kukuruku.co/hubs/*")
+	},
+	Action(Boost(9))
+};
