@@ -7,6 +7,12 @@ Rule {
 };
 Rule {
 	Matches {
+		Title("Language")
+	},
+	Action(Boost(100))
+};
+Rule {
+	Matches {
 		Url("reddit.com/r/*/comments")
 	},
 	Matches {
