@@ -4,8 +4,9 @@ Rule {
 	Action(Downrank(3))
 };
 Rule {
+	Matches { Url("rust") },
 	Matches { Title("Language") },
-	Action(Boost(100))
+	Action(Boost(500))
 };
 Rule {
 	Matches { Site("|discord.com|") },
