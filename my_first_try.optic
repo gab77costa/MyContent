@@ -1,28 +1,23 @@
-// they match the specific rule.
+DiscardNonMatching;
 Rule {
-	Matches {
-		Title("* 2000 *")
-	},
+	Matches { Title("2000")},
 	Action(Downrank(3))
 };
 Rule {
-	Matches {
-		Title("Language")
-	},
+	Matches { Title("Language") },
 	Action(Boost(100))
 };
 Rule {
-	Matches {
-		Url("reddit.com/r/*/comments")
-	},
-	Matches {
-		Url("stackoverflow.blog/*")
-	},
-	Action(Boost(3))
+	Matches { Site("|discord.com|") },
+	Action(Boost(1000))
 };
 Rule {
-	Matches {
-		Url("kukuruku.co/hubs/*")
-	},
+	Matches { Site("|kukuruku.co|") },
 	Action(Boost(200))
 };
+Rule {
+	Matches { Url("reddit.com/r/*/comments") },
+	Matches { Url("stackoverflow.blog/*") },
+	Action(Boost(10))
+};
+
